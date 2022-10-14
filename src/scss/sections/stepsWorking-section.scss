@@ -1,0 +1,174 @@
+.stepsWorking-section {
+    color: $black;
+    font-family: $MazzardHBold;
+
+    &__wrapper1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: scroll;
+		height: 700px;
+    }
+
+    &__inner {
+        padding-top: 2.5rem;
+    }
+
+    &__step-block {
+        padding-bottom: 7rem;
+        min-width: 100%;
+    }
+
+    .title__h2 {
+        font-size: 3.8rem;
+    }
+
+    &__text,
+    &__text1 {
+		font-size: 1.8rem;
+        font-family: $Montserrat;
+
+		@include media('>=phone-lg'){
+			font-size: 2rem;
+		}
+
+		@include media('>=widescreen-lg'){
+			font-size: 2.4rem;
+		}
+    }
+
+    &__text1 {
+        flex-basis: 46%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 5rem;
+
+        div {
+            padding: 1.5rem 7.7rem 1.5rem 1.5rem;
+            border-bottom: 2px solid $orange1;
+            border-left: 2px solid $orange1;
+			margin-right: 10px;
+        }
+
+        p {
+            font-size: 2.1rem;
+        }
+    }
+
+    &__span {
+        text-transform: uppercase;
+    }
+
+    &__line,
+    &__line-active {
+        height: 2px;
+    }
+
+    &__line {
+        width: 100%;
+        background-color: $gray;
+        margin-bottom: 7.4rem;
+    }
+
+    &__line-active {
+        width: 50%;
+        background-color: $black;
+        position: relative;
+    }
+
+    &__line-circle {
+        position: absolute;
+        right: 0;
+        top: -20px;
+        width: 50px;
+        height: 50px;
+        background-color: $black;
+        border-radius: 50%;
+
+        div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        span {
+            position: absolute;
+            color: $white;
+            top: 5px;
+            left: 17px;
+            font-size: 3.6rem;
+            font-family: $MontserratBold;
+        }
+    }
+
+    &__step {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column-reverse;
+
+		@include media('>=tablet'){
+			flex-direction: row;
+		}
+    }
+
+	&__step-block {
+		margin-left: 10px;
+
+		@include media('>=tablet'){
+			margin-left: 20px;
+		}
+	}
+
+    &__block {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        border: 2px solid $black;
+		min-height: 300px;
+		padding: 1rem;
+		margin-right: 20px;
+		margin-bottom: 2rem;
+
+		@include media('>=tablet'){
+			padding: 2rem;
+			flex-basis: 50%;
+			margin-left: 20px;
+			margin-bottom: 0;
+			min-height: 500px;
+		}
+
+		@include media('>=widescreen-lg'){
+			padding: 5rem;
+			min-height: 500px;
+			flex-basis: 65%;
+		}
+
+		&:first-of-type {
+			margin-left: 0;
+		}
+    }
+
+    &__title {
+        font-size: 5.6rem;
+        font-family: $MontserratBold;
+        position: absolute;
+		left: 0;
+		bottom: 150px;
+
+		@include media(">=phone-lg") {
+			font-size: 6.6rem;
+			bottom: 110px;
+        }
+
+		@include media('>=tablet'){
+			bottom: 200px;
+			left: -135px;
+			font-size: 9.6rem;
+		}
+
+		@include media('>=widescreen-lg'){
+			bottom: 150px;
+		}
+    }
+}

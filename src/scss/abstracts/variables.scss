@@ -1,0 +1,54 @@
+// Breakpoints
+$breakpoints: (
+  'phone-sm': 320px,
+  'phone-md': 375px,
+  'phone': 480px,
+  'phone-lg': 576px,
+  'tablet': 768px,
+  'tablet-lg': 992px,
+  'desktop': 1024px,
+  'widescreen': 1200px,
+  'widescreen-md': 1360px,
+  'widescreen-lg': 1440px,
+  'widescreen-full': 1600px,
+  'full-hd': 1920px,
+);
+
+// Colors
+$black: #000000;
+$white: #FFFFFF;
+$border: #CCCCCC;
+$success: #28A745;
+$warning: #FFC117;
+$error: #DC3545;
+
+// Fonts
+$MontserratThin: 'MontserratThin';
+$Montserrat: 'Montserrat';
+$MontserratItalic: 'Montserrat-Italic';
+$MontserratBold: 'Montserrat-Bold';
+$Syncopate: 'Syncopate';
+$SyncopateBold: 'Syncopate-Bold';
+$MazzardH: 'MazzardH-Regular';
+$MazzardHBold: 'MazzardH-Bold';
+// Other
+$base-transition: all 0.3s ease;
+
+$blue1: #49F6FF;
+$blue2: #31ACE6;
+$blue3: #134CC0;
+$blue4: #001C5D;
+$blue5: #212121;
+
+$orange: #FFB700;
+$orange1: #FF710B;
+
+$red: #ff1b50;
+$red1: #94002D;
+
+$green: #00CC00;
+$green1: #008500;
+$green2: #39E639;
+
+$gray: #CCCCCC;
+$gray1: #2b2a2f;

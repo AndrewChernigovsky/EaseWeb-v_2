@@ -1,0 +1,21 @@
+nav(class=menuClasses[0])
+    div(class=menuClasses[1])
+        include logo
+    div(class=menuClasses[2])
+        each ul in menuClasses
+            if ul === navUlClasses
+                ul(class=ul)
+                    li(class=menuClasses[4])
+                        if mainPage
+                            a(class=menuClasses[5] href="#service")= 'Услуги'
+                        else
+                            a(class=menuClasses[5] href="../index.html#service")= 'Услуги'
+                    li(class=menuClasses[4])
+                        if mainPage
+                            a(class=menuClasses[5] href="#contacts")= 'Контакты'
+                        else
+                            a(class=menuClasses[5] href="../index.html#contacts")= 'Контакты'
+                    li(class=menuClasses[4])
+                        a(class=menuClasses[5] href="tel:89999999999")= '8(999)999-99-99'
+
+        button(class=menuButton, alt='Заказать звонок', id=menubtn) Заказать звонок

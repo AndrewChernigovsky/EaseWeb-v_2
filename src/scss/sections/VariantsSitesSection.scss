@@ -1,0 +1,43 @@
+.variantsSitesSection {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-left: -3rem;
+    position: relative;
+    min-height: 760px;
+	overflow: hidden;
+
+	.swiper-main {
+		position: absolute;
+		left: 180px;
+	}
+	.swiper-wrapper {
+		display: flex;
+	}
+
+    &__card {
+        min-height: 250px;
+        max-width: 560px;
+        padding: 1rem 1rem 5rem 5rem;
+        border: 2px solid $black;
+        background-color: $gray;
+        color: $black;
+        border-radius: 40px;
+        display: grid;
+        align-items: flex-end;
+
+        @include media('>=tablet') {
+            min-height: 650px;
+        }
+
+        .title__h2 {
+            word-break: break-all;
+			font-size: 5.2rem;
+        }
+    }
+
+	.swiper-main__slide.swiper-main-card1 {
+		flex-shrink: 2;
+	}
+}
